@@ -1,0 +1,102 @@
+-- For more details on this file and what you can do with it, look here:
+-- https://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+
+settings = {
+     -- Exclude some files for different targets
+    excludeFiles =
+    {
+        all     = {"*@4x.*"},
+        iphone  = {
+                   "Icon-xxxhdpi.png", "Icon-xxhdpi.png", "Icon-xhdpi.png", "Icon-hdpi.png", "Icon-mdpi.png", "Icon-ldpi.png",
+                   "Icon-osx.icns",
+                   "*.ogg"
+                  },
+        android = {
+                   "Icon.png", "Icon@2x.png", "Icon-Small-40.png", "Icon-Small-40@2x.png", "Icon-60.png", "Icon-60@2x.png", "Icon-72.png", "Icon-72@2x.png", "Icon-76.png", "Icon-76@2x.png", "Icon-Small-50.png", "Icon-Small-50@2x.png", "Icon-Small.png", "Icon-Small@2x.png", "Default-568h@2x.png", "Icon-Small@3x.png", "Icon-60@3x.png",
+                   "Icon-osx.icns",
+                   "*.aac"
+                  }
+    },
+    orientation = 
+    {
+        default = "portrait",
+        supported = { "portrait", "portraitUpsideDown" },
+    },
+
+   plugins = {
+      ["plugin.mwc"] = { publisherId = "com.xibalbastudios" },
+      ["plugin.reviewPopUp"] =
+        {
+            publisherId = "tech.scotth",
+        },
+      ["CoronaProvider.gameNetwork.apple"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { iphone=true, }, 
+        },
+      ["CoronaProvider.native.popup.activity"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { iphone=true }
+        },
+      ["CoronaProvider.native.popup.social"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = {android=true }
+        },
+     ["plugin.appodeal"] =
+      {
+          publisherId = "com.coronalabs"
+      },
+     ["plugin.gpgs"] =
+      {
+          publisherId = "com.coronalabs",
+          supportedPlatforms = { android=true}
+      },
+     ["plugin.twitter"] = 
+        {
+          publisherId = "com.jasonschroeder",
+        },
+   --  ["plugin.facebook.v4a"] =
+   --     {
+    --        publisherId = "com.coronalabs",
+    --    },
+    -- ["plugin.facebookAnalytics"] =
+    --    {
+    --        publisherId = "tech.scotth",
+    --        supportedPlatforms = { iphone=true, android=true, ["android-kindle"]=true }
+    --    },
+   },
+    android = {
+     -- facebookAppId = "718317995026005",
+      googlePlayGamesAppId = "371704634448",
+      usesPermissions =
+          {
+              "com.android.vending.CHECK_LICENSE",
+              "android.permission.INTERNET",
+              "android.permission.ACCESS_NETWORK_STATE",
+              "android.permission.ACCESS_COARSE_LOCATION",
+              "android.permission.WRITE_EXTERNAL_STORAGE"
+          },
+    },
+    iphone = 
+    {
+        xcassets = "Images.xcassets",
+        plist = 
+        {
+            NSAppTransportSecurity = { NSAllowsArbitraryLoads=true },
+            UIStatusBarHidden = true,
+            UIPrerenderedIcon = true,
+            UIApplicationExitsOnSuspend = false,
+            MinimumOSVersion = "8.0",
+            UILaunchStoryboardName = "LaunchScreen", 
+            FacebookAppID = "718317995026005",  -- Replace XXXXXXXXXX with your Facebook App ID
+            CFBundleURLTypes =
+            {
+                { CFBundleURLSchemes = { "fb718317995026005"} }  -- Replace XXXXXXXXXX with your Facebook App ID
+            },  
+            CFBundleDisplayName = "Brain Distraction",
+            CFBundleName = "Brain Distraction",
+        }, 
+    },
+}

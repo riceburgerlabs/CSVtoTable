@@ -1,0 +1,14 @@
+Decription,Include,Word / Phrase,Chinese,Korean,Spanish
+Enter the codes for each country here,,,zh,ko,es
+On main page,Yes,What is your name?,你叫什么名字？,당신의 이름은 무엇입니까?,¿Cuál es su nombre?
+On main page,Yes,How old are you?,你几岁？,당신은 몇 살입니까?,¿Cuantos años tienes?
+On main page,Yes,Press to continue,按继续,계속하려면를 누르십시오,Pulse para continuar
+iOS Achievements - Title,No,Wave 1 Completed,第一轮完成,웨이브 1 완료,La onda 1 Completado
+iOS Achievements - Before Completed,No,Complete the first Wave.,完成第一轮,처음 웨이브를 완료합니다.,Completar la primera ola.
+iOS Achievements - After Completed,No,Completed the first Wave.,第一轮完成,처음 웨이브를 완료.,Se completó la primera ola.
+iOS Achievements - Title,No,50 Points,50分,50 포인트,50 Puntos
+iOS Achievements - Before Completed,No,Complete 5 Waves and earn 50 points,完成第5轮并赢得50分,전체 5 파도 50 포인트를 적립,Completa 5 ondas y gana 50 puntos
+iOS Achievements - After Completed,No,Completed 5 Waves and earned 50 points,完成了第5轮并赢得了50分,5 파도를 완료하고 50 점을 획득,Completado 5 ondas y ganado 50 puntos
+iOS LeaderBoard - Title,No,Best Score,最高分数,최고 점수,Mejor puntuación
+iOS LeaderBoard - Unit (singular),No,point,分数,포인트,punto
+iOS LeaderBoard - Unit (plural),No,points,分数,전철기,puntos

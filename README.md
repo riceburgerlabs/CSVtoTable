@@ -2,11 +2,15 @@
 Simple piece of code that takes a CSV file and outputs a file with a table that can be included in a projects
 
 ----------
-Folders
+Folders/Files
 ----------
 CSVToTable - The code that does the work
 
 TranslationExample - An example showing how it works.
+
+CSVToTable.zip - Zip file of project for easy download.
+
+TranslationExample.zip - Zip file of example for easy download.
 
 ----------
 Additional Links
